@@ -1,0 +1,35 @@
+body{
+  background-image: linear-gradient(blue, white);
+}
+
+
+header img{
+  width: 100%; /*This streches the image across the viewport*/
+  height: auto;/*This will chnage the height based on the size of the viewport*/
+  max-width: 500px;
+}
+
+nav li{
+  list-style-type: none;
+}
+
+nav {
+  border-top: solid 0.3em black;
+  border-bottom: solid 0.3em black;/*This adds space between elements*/
+  border-radius: 1em;/*This rounds the corners*/
+}
+
+main {
+  border-top: solid 0.3em black;
+  border-bottom: solid 0.3em black;
+  margin-top: 1em;
+  border-radius: 1em;
+}
+
+
+footer {
+  border-top: solid 0.3em black;
+  border-bottom: solid 0.3em black;
+  margin-top: 1em;
+  border-radius: 1em;
+}

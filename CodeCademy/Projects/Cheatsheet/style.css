@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #EEEEEE;
+  color: #373A40;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #DC5F00;
+}
+
+#html button,
+#css button,
+#javascript button{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.tabs {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  background-color: #686D76;
+  color: #EEEEEE;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.tab-button:hover {
+  background-color: #DC5F00;
+}
+
+.tab-content {
+  display: none;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #686D76;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #56585d;
+  color: #EEEEEE;
+}
+
+tr:nth-child(even) {
+  background-color: #EEEEEE;
+}
+
+tr:hover {
+  background-color: #DC5F00;
+  color: #EEEEEE;
+}
+
+.collapsible {
+  background-color: #686D76;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.collapsible:hover {
+  opacity: 0.7;
+}
+
+.collapsible-content {
+  display: none;
+  overflow: hidden;
+  padding: 0 18px;
+  background-color: #f1f1f1;
+}

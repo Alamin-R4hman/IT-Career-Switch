@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JQuery 3</title>
+  <script src="/jquery-3.7.1.js"></script>
+  <script>
+  $(document).ready(function(){
+    
+    $("button").click(function (){
+      alert($("#w3s").attr("href"));
+    });
+
+  });
+    
+
+  </script>
+</head>
+<body>
+
+  <p><a href="https://www.google.com" id="w3s">Google.com</a></p>
+
+  <button>Show href Value</button>
+  
+</body>
+</html>

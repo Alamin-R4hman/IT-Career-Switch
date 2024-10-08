@@ -1,0 +1,23 @@
+/*Mobile*/
+@media screen and (max-width: 640px) {
+  nav ul li{
+    border-radius: 1em;
+    display: block;
+    border: solid 0.1em white;
+    padding: .5em;
+    margin: 0.5em;
+  }
+
+  .tablet{
+    display: none;
+  }
+
+  .desktop{
+    display: none;
+  }
+
+  div .center{
+    border: none;
+    padding-left: 15%;
+  }
+}

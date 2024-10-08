@@ -1,0 +1,16 @@
+Documentation and Research
+
+Review
+
+Awesome! With just a few simple searches and some research you completed the header for your portfolio site. Reading documentation and searching Google and Stack Overflow make it easy to solve development problems, even if you haven’t previously encountered the right tool for the job.
+
+In summary:
+
+Documentation is an easy way to view all of the information about a language or 
+Preview: Docs Loading link description
+framework
+. The Mozilla Development Network is the source of documentation for HTML, CSS, and JavaScript.
+
+Investigating a new language feature is as easy as typing the problem and the language into Google or Stack Overflow.
+
+Now that you know how to find any feature and read its documentation, the sky’s the limit on what you can do. Feel free to browse MDN and Stack Overflow to find new features and try incorporating them into your header to make it look even better. Great job!

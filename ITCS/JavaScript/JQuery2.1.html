@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery 2.1</title>
+  <script src="/jquery-3.7.1.js"></script>
+  <script>
+
+    function appendText() {
+      var txt1 = "<p> This is a text along with HTML markup </p>" //Creates txt with HTML
+      var txt2 = $("<p></p>").text("This is a text"); // Create text with jQuery
+      var txt3 = document.createElement("p");
+      txt3.innerHTML = "Text created with the DOM" //Created with DOM
+      $("body").append(txt1, txt2, txt3); //append new elements
+    }
+
+  </script>
+</head>
+<body>
+
+  <p>This is a paragraph</p>
+  <button onclick="appendText()">Append Text</button>
+  
+</body>
+</html>

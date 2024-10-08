@@ -1,0 +1,10 @@
+#Project #5
+#Alphabetical Order
+
+words = input("Enter your words here: ")
+
+words = words.split()
+words.sort()
+
+for word in words:
+   print(word)

@@ -1,0 +1,23 @@
+h2{
+  background-color: red;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+#container{
+  background-color: chocolate;
+}
+
+.accent{
+  background-color: darkolivegreen;
+}
+
+body main div {
+  color: white;
+}
+
+footer{
+  background-color: rgb(50, 220, 115);
+  color:#8516ab;
+}

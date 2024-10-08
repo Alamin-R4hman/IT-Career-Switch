@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variables</title>
+  <script>
+
+    //Variables
+
+    var myName = "Patrick Loner";
+        myAge = 39;
+
+    var myMsg = myName +  myAge;
+
+    console.log(myMsg)
+
+    var myMsg = myName + " " + "is " +  myAge;
+
+    console.log(myMsg);
+
+    var name = "Tom Jones", age = 39, gender = "Male";
+
+    var newName = "Sherry Smith",
+        newAge = 43,
+        genderNew = "Female";
+
+        console.log(name);
+        console.log(newName);
+        console.log(age);
+        console.log(newAge);
+        console.log(gender);
+        console.log(genderNew);
+
+        var myBoolean = true;
+        console.log(myBoolean);
+
+  // Arrays
+
+  var myCars = ["Volvo", "BMW", "Audi"];
+  var myCars2 = new Array ("Skoda", "VW", "Range"); // Not necessary to do as it is extra
+
+  console.log(myCars);
+  console.log(myCars2);
+
+  console.log(myCars[2]);
+
+  myCars2[1] = "Replaced VW"
+
+  console.log(myCars2[1]);
+
+  myCars2.sort();
+  myCars2.join();
+  myCars2.reverse();
+
+  </script>
+</head>
+<body>
+  
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="classes.html">Classes</a></li>
+      <li><a href="enroll.html">Enroll</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <script>
+
+    var myLinks = document.getElementsByTagName('a');
+
+    console.log(myLinks);
+
+    myLinks[3];
+
+    console.log(myLinks[3]);
+
+    console.log(myLinks.length); //How many links there are
+    console.log(myLinks.sort);
+
+  </script>
+
+</body>
+</html>

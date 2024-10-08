@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display help</title>
+</head>
+<body>
+
+  <!--Let’s break down the display properties:
+
+  display: block;:
+
+The element takes up the full width available.
+Starts on a new line.
+Examples: <div>, <h1>, <p>.
+
+  display: inline;:
+
+The element takes up only as much width as necessary.
+Does not start on a new line; it sits inline with other elements.
+Cannot have width and height set.
+Examples: <span>, <a>, <em>.
+
+  display: inline-block;:
+
+The element takes up only as much width as necessary.
+Does not start on a new line; it sits inline with other elements.
+Can have width and height set.
+Examples: <img>, <button>.
+
+A simple way to think about it is like this.
+Let’s think of it like a row of toy shelves:
+
+Block: Imagine a big toy box that takes up the whole shelf. Nothing else can fit next to it.
+
+Inline: Think of small toy cars that can line up side by side on the same shelf.
+
+Inline-block: Like a medium-sized toy box that can sit next to other boxes or cars on the shelf.
+
+These help decide how things line up on a webpage.
+-->
+
+<h2>Block:</h2>
+
+<div style="display: block; background: lightblue;">Block Element</div>
+<div style="display: block; background: lightgreen;">Another Block Element</div>
+
+<p>code: <br>
+
+Each div starts on a new line and takes up the full width.</p>
+
+<h2>Inline:</h2>
+
+<span style="display: inline; background: lightblue;">Inline Element</span>
+<span style="display: inline; background: lightgreen;">Another Inline Element</span>
+
+<p>code:<br>
+
+Both span elements sit on the same line, taking up only as much width as needed.</p>
+
+<h2>Inline-Block:</h2>
+
+<div style="display: inline-block; width: 100px; background: lightblue;">Inline-Block Element</div>
+<div style="display: inline-block; width: 100px; background: lightgreen;">Another Inline-Block Element</div>
+
+<p>code:<br>
+
+Both div elements sit on the same line, but you can set their width and height.
+Understanding these properties helps you control how elements are laid out on the page.</p>
+
+
+<h3>
+You:
+so what if an elemnt is a block elemnt and i set it as display inline</h3>
+
+<p>If you set a block element to display: inline;, it will behave like an inline element. This means: </p>
+
+<p>Width and Height: The element will only take up as much width as its content requires. You cannot set its width and height.
+Line Behavior: The element will sit inline with other elements, not starting on a new line.
+Box Model: Margins and padding will still apply, but the element will not break to a new line.</p>
+
+<p>Example:</p>
+
+<div style="display: inline; background: lightblue;">Inline Div</div>
+<span style="background: lightgreen;">Inline Span</span>
+
+<p>code:<br>
+
+In this example:</p>
+
+<p>The div with display: inline; will sit on the same line as the span.
+The div will only be as wide as its content, similar to the span.
+This can be useful for making block elements behave</p>
+
+<!--
+Understanding display properties in CSS is crucial for controlling the layout of elements on a webpage. Here’s a brief overview of the key display properties:
+
+display: block;
+Behavior: Takes up the full width available and starts on a new line.
+Examples: <div>, <h1>, <p>.
+Use Case: When you want an element to occupy its own line and take up the full width of its container.
+
+display: inline;
+Behavior: Takes up only as much width as necessary and does not start on a new line.
+Examples: <span>, <a>, <em>.
+Use Case: When you want elements to sit next to each other on the same line.
+
+display: inline-block;
+Behavior: Takes up only as much width as necessary, does not start on a new line, but can have width and height set.
+Examples: <img>, <button>.
+Use Case: When you want elements to sit next to each other but still be able to set their width and height.
+-->
+
+<!--
+Block Element: Takes up the full width and starts on a new line.
+Inline Element: Sits on the same line as other inline elements.
+Inline-Block Element: Sits on the same line but can have a set width and height.
+
+Practical Use:
+Block: Use for sections, articles, divs that need to take up full width.
+Inline: Use for text elements that need to flow within a paragraph.
+Inline-Block: Use for buttons, images, or other elements that need to sit inline but have specific dimensions.
+-->
+
+<!--
+
+what is the default value of an image?
+
+The default display value of an image (<img> element) is inline. This means images line up next to other inline elements, like text, without starting on a new line. However, they can have dimensions set, unlike regular inline elements.
+
+You
+so if i set the image to have a value of block it would take a new line and take the entire width so other elements cant be next to it?
+
+Yes, exactly! Setting an image’s display value to block makes it start on a new line and take up the full width of its container. This means no other elements can sit next to it on the same line.
+
+You
+so inline-block does what? i feel like inline is the same as it
+
+inline-block is a mix of both inline and block:
+
+Like inline, it allows elements to sit next to each other on the same line.
+Like block, it lets you set width and height.
+So, inline-block elements can be sized like blocks but still line up like inline elements. This is useful for arranging items side by side while controlling their size.
+
+You
+so normal inline elements can't have their width or height set?
+
+Correct! Normal inline elements cannot have their width or height set. They only take up as much space as their content needs. This is why inline-block is useful, as it allows setting width and height while still letting elements sit side by side.
+
+-->
+  
+</body>
+</html>

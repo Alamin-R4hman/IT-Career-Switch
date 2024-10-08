@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Help</title>
+  <style>
+    
+    nav {
+      font-family: Arial, sans-serif;
+    }
+
+    .button-group {
+      display: inline-flex;
+      gap: 10px; /* Adds space between buttons */
+    }
+
+    button {
+      padding: 5px 10px;
+    }
+
+    .block-flex {
+  display: flex;
+  background-color: lightblue;
+}
+
+.inline-flex {
+  display: inline-flex;
+  background-color: lightgreen;
+}
+
+
+
+  </style>
+</head>
+<body>
+
+  <nav>
+    <span>Menu:</span>
+    <div class="button-group">
+      <button>Home</button>
+      <button>About</button>
+      <button>Contact</button>
+    </div>
+  </nav>
+
+  <div class="block-flex">Block Flex</div>
+  <div class="inline-flex">Inline Flex</div>
+  <span>Some text</span>
+
+<!-- 
+inline-flex and flex serve different purposes, and the choice depends on the layout needs:
+
+Use display: flex; when:
+
+You want the container to behave like a block element.
+The container should take up the full width of its parent.
+You need the container to start on a new line.
+Use display: inline-flex; when:
+
+You want the container to behave like an inline element.
+The container should sit inline with other elements on the same line.
+You need to align the container with text or other inline elements.
+Example scenarios:
+
+flex: Creating a full-width navigation bar.
+inline-flex: Aligning a group of buttons with text in a paragraph.
+Each has its use case, and choosing the right one depends on the specific layout requirements.
+-->
+
+<!-- 
+.cards {
+  background-color: #ffc200;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
+
+.col {
+display: inline-flex;
+}
+
+The selected code defines styles for the cards and col classes. The .cards class sets a yellow background, uses flexbox for layout, allows items to wrap, and spaces them evenly
+
+The CSS properties in the .cards class are meant to style the container that holds the columns, while the .col class styles the individual columns. Here’s why they are separated:
+
+Container vs. Items:
+
+.cards is the flex container that controls the layout of its child elements (the columns).
+.col is for the individual columns inside the flex container.
+Flexbox Layout:
+
+display: flex; on .cards makes it a flex container, allowing it to control the layout of its children.
+flex-wrap: wrap; on .cards allows the columns to wrap to the next line if they don’t fit in one row.
+justify-content: space-around; on .cards spaces the columns evenly.
+Background Color:
+
+background-color: #ffc200; on .cards sets the background color for the entire container, not just individual columns.
+If you put all the CSS in the .col class, each column would become a flex container, which is not the intended layout. The goal is to have .cards as the flex container and .col as the flex items.
+
+Example:
+
+.cards {
+  background-color: #ffc200;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col {
+  display: inline-flex;
+}
+
+code
+
+.cards controls the overall layout and appearance of the container.
+.col controls the layout and appearance of the individual
+-->
+
+  
+  
+</body>
+</html>

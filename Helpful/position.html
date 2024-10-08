@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positions</title>
+</head>
+<body>
+
+<p>The position property in CSS specifies how an element is positioned in a document. Here are the main values:</p>
+
+<p><strong>static:</strong> Default value. Elements are positioned according to the normal flow of the document.</p>
+
+<p><strong>relative:</strong> Positioned relative to its normal position. You can use top, right, bottom, and left to adjust its position.</p>
+
+<p><strong>absolute:</strong> Positioned relative to its nearest positioned ancestor (not static). If none, it uses the document body.
+  
+<p><strong>fixed:</strong> Positioned relative to the browser window. It stays in place even when the page is scrolled.</p>
+
+<p><strong>sticky:</strong> Toggles between relative and fixed based on the scroll position. It sticks to a defined offset from the viewport.
+Example:</p>
+
+.element {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+
+<p>code:</p>
+
+<p>This positions the element 50px from the top and 100px from the left of its nearest positioned ancestor.</p>
+
+<h2>Notes</h2>
+
+<ul>
+  <li>The z-index of an element specifies how far back or how far forward an element appears on the page when it overlaps other elements.</li>
+  <li>The display property allows you to control how an element flows vertically and horizontally in a document.</li>
+  <li>inline elements take up as little space as possible, and they cannot have manually adjusted width or height.</li>
+  <li>block elements take up the width of their container and can have manually adjusted heights.</li>
+  <li>inline-block elements can have set width and height, but they can also appear next to each other and do not take up their entire container width.</li>
+  <li>The float property can move elements as far left or as far right as possible on a web page.</li>
+  <li>You can clear an element’s left or right side (or both) using the clear property.</li>
+</ul>
+
+<p>When combined with an understanding of the box model, positioning can create visually appealing web pages. So far, we’ve focused on adding content in the form of text to a web page. In the next unit, you’ll learn how to add and manipulate images to a web page.</p>
+  
+</body>
+</html>

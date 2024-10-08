@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loops</title>
+</head>
+<body>
+
+  <p id="demo">This is the text that will change once you click the button</p>
+  <p id="demo-2">This is text number 2 that will change once you click the button</p>
+
+  <script>
+
+    var a = 1;
+    if (a < 10) {
+      console.log(a)
+    }
+    
+    var a = 1;
+    while (a < 10) {
+      console.log(a)
+      a++;
+    }
+    
+    var i = 1;
+    var text = "";
+
+    while (i < 10) {
+      text += "<br> The number is " + i;
+      i++;
+      console.log(text)
+    }
+
+    var cars = ["Volvo", "BMW", "Audi", "VW"];
+
+    var i = 0;
+    var text = "";
+
+    while (cars[i]) {
+      text += cars[i] + "<br>";
+      i++;
+    }
+
+    //For Loop
+
+    var cars = ["Volvo", "BMW", "Audi", "VW", "Skoda"];
+    var text = "";
+
+    for (i = 0; i < cars.length; i++) {
+      text += cars[i] + "<br>";
+    }
+
+    /* 
+    Break:
+      A special word that jumps us out of the loop for good
+      Not used as often with For and While loops but you might encounter it
+
+    Continue:
+      A special word that jumps back to the top of the loop
+      So it stops that particular iteration but not the loop as a whole
+    */
+
+    var i = 0;
+    var text = "";
+
+    for (i = 0; i < 100; i++) { // i is 0 and checks if i is less than 10
+      if (i === 31) {break;} // If i is equal to 3 it will break and jump out of loop
+      text += "The number is " + i + "<br>";
+    }
+    var i = 0;
+    var text = "";
+
+    for (i = 0; i < 10; i++) { // i is 0 and checks if i is less than 10
+      if (i === 6) {contine;} // If i is equal to 6 it will continue and skip the bottom text go to the end and start again
+      text += "The number is " + i + "<br>";
+    }
+
+
+
+
+    
+
+
+  </script>
+
+  <button onclick="document.getElementById('demo').innerHTML = text">Click Me!</button>
+  <button onclick="document.getElementById('demo-2').innerHTML = text">Click Me for text 2!</button>
+  
+</body>
+</html>

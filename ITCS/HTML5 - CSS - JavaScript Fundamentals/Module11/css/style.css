@@ -1,0 +1,177 @@
+body{
+  background-image: linear-gradient(blue, white);
+}
+
+
+header img{
+  width: 100%; /*This streches the image across the viewport*/
+  height: auto;/*This will chnage the height based on the size of the viewport*/
+  max-width: 500px;
+}
+
+
+nav {
+  border-radius: 1em;/*This rounds the corners*/
+  margin-bottom: 1em;/*This adds space between elements*/
+  font-weight: bold;
+  text-align: center;
+}
+
+nav ul{
+  padding: 0;
+  background-color: blu; 
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+nav li{
+  background-color: black;
+  padding: 1em;
+  margin: .45em;
+  list-style-type: none;/*This removes bullet points*/
+}
+
+nav ul li a{
+  color: white;
+  text-decoration: none;/*This removes underline from hyperlink*/
+}
+
+figure{
+  text-align: center;
+  background-image: linear-gradient(blue, white);
+}
+
+figure img {
+  max-width: 400px;
+  max-height: 400px;
+  width: 100%;
+  height: auto;
+}
+
+main {
+  /*background-color: white;
+  border-top: solid 0.3em black;
+  border-bottom: solid 0.3em black;*/
+  background-image: linear-gradient(blue,red, white);
+  min-height: 400px;
+  margin-top: 1.0em;
+  margin-bottom: 1.0em;
+  border-radius: 1em;
+}
+
+/*3-Column Layout Begin*/
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div .column {
+  float: left;
+}
+
+div .left{
+  padding: 0.5%;
+  width: 20%;
+  float: left;
+}
+
+div .right{
+  float: right;
+  padding-left: 0.5%;
+  width:24%;
+}
+
+
+footer {
+  background-image: linear-gradient(to right,blue,red, white);
+  border-radius: 1em;
+  text-align: center;
+}
+
+/*3-Column Layout End*/
+
+/*Schedule Table Begin*/
+.schedule table{
+  color: white;
+  border: 0.1em solid black;
+  width: 95%;
+  border-collapse: collapse;
+  margin-left: 2.5%;
+  background-image: linear-gradient(blue,red, white);
+}
+
+.schedule caption{
+  border: 0.1em solid black;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.schedule th, .schedule td{
+  border: 0.1em solid black;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.schedule th{
+ background-color: black;
+}
+
+/*Schedule Table End*/
+
+/*Enroll Table End*/
+
+#enrollprice{
+  border: 0.1em solid black;
+  border-collapse: collapse;
+}
+
+#enrollprice td{
+  border: 0.1em solid black;
+  padding: 0.5em;
+  text-align: center;
+}
+/*Enroll Table End*/
+
+/*Begin Desktop*/
+@media screen and (min-width: 960px){
+
+  header{
+    background-image: linear-gradient(to right,blue,red, white);
+  }
+
+  header img{
+    width: auto;
+    height: 4.1em;
+  }
+
+  .desktop{
+    display: block;
+  }
+
+  nav{
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    background-color: black;
+    margin-top: -5em;/*This moves the nav element above where it would normally be*/
+
+    float: right;/*This floats the nav element to the right side of the page*/
+    border-top: solid 0.2 black;
+    border-bottom: solid 0.2 black;
+    max-width: 52%;
+  }
+
+  nav ul li{
+    display: inline-block;
+    border-radius: 1em;
+  }
+
+  div .center{
+    padding: 0.5%;
+    width: 52%;
+    border-right: 0.3em solid black;
+    border-left: 0.3em solid black;
+  }
+}
+
+/*End Desktop*/

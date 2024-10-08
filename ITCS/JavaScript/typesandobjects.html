@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Types and Objects</title>
+</head>
+<body>
+<script>
+
+  var x = "55";
+  if (isNaN(x)){
+  console.log("This is not a number")
+  };
+  
+  var y = 55;
+  if (isNaN(y)){
+  console.log("This is a number")
+  };
+
+  console.log(x);
+  console.log(y);
+
+  var q =123;
+  q.toString();
+
+  (123).toString(); // same thing
+
+  (100 + 50).toString(); // = "150"
+
+  //Date
+
+  var d = new Date ();
+  console.log(d);
+
+  //Object
+
+  function myPerson (firstName, lastName, eye, age) {
+    this.firstName = firstName
+    this.lastName = lastName
+    this.eye = eye
+    this.age = age
+  }
+
+  //var myFather ("John", "Smith", "Brown", 65);
+  //var myMother ("Kerry", "Sanders", "Blue", 64);
+
+  console.log (myPerson());
+
+</script>
+</body>
+</html>
