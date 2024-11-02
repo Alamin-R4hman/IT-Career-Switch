@@ -34,7 +34,7 @@ header, .about-main, #services, #gallery, footer {
 
 a {
   text-decoration: none;
-  color: #333333;
+  color: seashell;
 }
 
 h1,
@@ -46,6 +46,8 @@ h3 {
 h1 {font-size: 2.5rem;}
 h2 {font-size: 1.75rem;}
 h3 {font-size: 1.5rem;}
+
+svg {fill: seashell;}
 
 section {padding: 10rem auto;}
 
@@ -67,7 +69,7 @@ header {
   z-index: 100;
   width: 100%;
   position: fixed;
-  background-color: #FFC300;
+  background-color: #1C3D5A;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -84,7 +86,7 @@ ul {
 
 ul li a {
   text-decoration: none;
-  color: #333333;
+  color: seashell;
   display: inline-block;
 }
 
@@ -112,8 +114,8 @@ ul li a {
   height: 100vh;
   width: 250px;
   z-index: 999;
-  background-color: #FFC300;
-  color: #333333;
+  background-color: #1C3D5A;
+  color: seashell;
   display: none;
   flex-direction: column;
   align-items: flex-start;
@@ -171,13 +173,14 @@ main {
 /* Services Section */
 
 #services {
-  background-color:#00bbff;
+  background-color:#1C3D5A;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
 h2 span {
   border-bottom: 2px solid #FF4500;
+  color: seashell;
 }
 #services h3 {
   padding-bottom: 1rem;
@@ -202,12 +205,13 @@ h2 span {
   height: 16rem;
   border-radius: 1rem;
   border: .25rem solid #FF4500;
+  color: seashell;
 }
 
 .breakdown,
 .assistance,
 .transport {
-  background-color: #FFC300;
+  background-color: #1C3D5A;
 }
 
 
@@ -238,7 +242,7 @@ h2 span {
 /* Footer Section */
 
 footer {
-  background-color: #00bbff;
+  background-color: #1C3D5A;
   padding-top: 3rem;
   padding-bottom: 2rem;
   flex-shrink: 0;
@@ -254,11 +258,12 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  color: seashell;
 }
 
 .contact-info a {
   text-decoration: none;
-  color: #333333;
+  color: seashell;
   display: inline-block;
 }
 
@@ -280,7 +285,7 @@ footer {
   padding-top: 1rem;
   border: .25rem solid #FF4500;
   border-radius: 1rem;
-  background-color: #FFC300;
+  background-color: #1C3D5A;
 
 }
 
